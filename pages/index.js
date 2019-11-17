@@ -140,13 +140,9 @@ export default class extends React.Component {
               <InputItem>{intl.get("name")}</InputItem>
               <InputItem type="email">{intl.get("email")}</InputItem>
             </Flex>
-            <Flex justify="between" align="center">
-              <InputItem>{intl.get("name")}</InputItem>
-              <InputItem type="email">{intl.get("email")}</InputItem>
-            </Flex>
           </List>
           <h3>2. 如果在Input中使用翻译, am-input-control没有添加至input的wrapper div上</h3>
-          <List className="abc">
+          <List renderHeader="正常header" className="abc">
             <Flex>
               <InputItem>{intl.get("name")}</InputItem>
               <InputItem type="email">{intl.get("email")}</InputItem>
